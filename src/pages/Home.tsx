@@ -67,7 +67,7 @@ const featuredProducts: FeaturedProduct[] = [
       {
         url: doctaDashboard,
         label: "Home Page",
-        description: "Tracks all app activities with ease.",
+        description: "Tracks all session activities with ease.",
         path: "docta.com/home",
       },
     ],
@@ -185,7 +185,7 @@ export default function Home() {
 
           <p className="relative z-10 mt-6 max-w-xl text-lg text-muted-foreground">
             Forgex designs and builds innovative digital solutions that solve
-            real-world problems. From healthtech and education to business and
+            real-world problems. From healthcare technology and education to business and
             institutional platforms, we turn ideas into secure, scalable
             technology that helps organizations work smarter, move faster and
             serve people better.
@@ -330,7 +330,7 @@ export default function Home() {
                 ) : (
                   <div className="mt-6 flex flex-1 items-center justify-center rounded-2xl border border-dashed border-border bg-muted/30 p-10 text-center">
                     <p className="text-sm text-muted-foreground">
-                      Screenshots coming soon.
+                      Interfaces coming soon.
                     </p>
                   </div>
                 )}

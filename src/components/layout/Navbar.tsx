@@ -13,16 +13,13 @@ import {
   IconMenu,
   IconX,
 } from "@/components/icons"
-import doctaLogo from "../../assets/docta/docta-logo.png";
-import UniLogo from "../../assets/docta/uni.png";
-import hoteLogo from "../../assets/hotel.png";
-import boutLogo from "../../assets/bout.png";
-import pulseLogo from "../../assets/pulse.png";
-import backLogo from "../../assets/back.png";
 
-
-
-
+import doctaLogo from "../../assets/docta/docta-logo.png"
+import UniLogo from "../../assets/docta/uni.png"
+import hoteLogo from "../../assets/hotel.png"
+import boutLogo from "../../assets/bout.png"
+import pulseLogo from "../../assets/pulse.png"
+import backLogo from "../../assets/back.png"
 
 const productItems: NavDropdownItem[] = [
   {
@@ -51,7 +48,7 @@ const productItems: NavDropdownItem[] = [
   },
   {
     label: "HotelMs",
-    to: "/products/hotelms",
+    to: "src\\pages\\NotFound.tsx",
     desc: "Hotel Management System",
     icon: (
       <img
@@ -63,7 +60,7 @@ const productItems: NavDropdownItem[] = [
   },
   {
     label: "BoutiqueMs",
-    to: "/products/boutiquems",
+    to: "src\\pages\\NotFound.tsx",
     desc: "Boutique Management System",
     icon: (
       <img
@@ -75,7 +72,7 @@ const productItems: NavDropdownItem[] = [
   },
   {
     label: "PulseChat",
-    to: "/products/pulsechat",
+    to: "src\\pages\\NotFound.tsx",
     desc: "Messaging System",
     icon: (
       <img
@@ -144,7 +141,9 @@ export function Navbar() {
             className={({ isActive }) =>
               cn(
                 "rounded-lg px-3 py-2 text-sm font-medium transition-colors",
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive
+                  ? "text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
               )
             }
           >
@@ -156,17 +155,22 @@ export function Navbar() {
             items={productItems}
             isActive={location.pathname.startsWith("/products")}
           />
+
           <NavDropdown
             label="Company"
             items={companyItems}
-            isActive={["/about", "/careers", "/contact", "/privacy"].includes(
-              location.pathname
-            )}
+            isActive={[
+              "/about",
+              "/careers",
+              "/contact",
+              "/privacy",
+            ].includes(location.pathname)}
           />
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
+
           <a href="/contact" className={buttonVariants()}>
             Get Started
           </a>
@@ -174,6 +178,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
+
           <button
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
@@ -210,6 +215,7 @@ export function Navbar() {
               items={productItems}
               onNavigate={() => setMobileOpen(false)}
             />
+
             <MobileGroup
               label="Company"
               open={mobileCompany}
@@ -218,9 +224,12 @@ export function Navbar() {
               onNavigate={() => setMobileOpen(false)}
             />
 
-            
-              <a href="/contact"
-              className={cn(buttonVariants(), "mt-3 w-full justify-center")}
+            <a
+              href="/contact"
+              className={cn(
+                buttonVariants(),
+                "mt-3 w-full justify-center"
+              )}
             >
               Get Started
             </a>
@@ -252,10 +261,19 @@ function MobileGroup({
         className="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
       >
         {label}
-        <span className={cn("transition-transform", open && "rotate-180")}>⌄</span>
+
+        <span
+          className={cn(
+            "transition-transform",
+            open && "rotate-180"
+          )}
+        >
+          ⌄
+        </span>
       </button>
+
       {open && (
-        <div className="mt-1 ml-3 space-y-1 border-l border-border pl-3">
+        <div className="mt-1 ml-3 max-h-[45vh] space-y-1 overflow-y-auto overscroll-contain border-l border-border pl-3">
           {items.map((item) => (
             <NavLink
               key={item.to}
@@ -263,15 +281,22 @@ function MobileGroup({
               onClick={onNavigate}
               className={({ isActive }) =>
                 cn(
-                  "flex items-center gap-2 rounded-lg px-3 py-2 text-sm",
+                  "flex min-h-12 items-center gap-3 rounded-lg px-3 py-2 text-sm",
                   isActive
                     ? "bg-accent font-medium text-accent-foreground"
                     : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                 )
               }
             >
-              <span className="text-primary">{item.icon}</span>
-              {item.label}
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg text-primary">
+                <span className="block h-8 w-8">
+                  {item.icon}
+                </span>
+              </span>
+
+              <span className="min-w-0 truncate">
+                {item.label}
+              </span>
             </NavLink>
           ))}
         </div>
