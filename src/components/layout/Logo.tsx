@@ -7,11 +7,11 @@ export function Logo({ className }: { className?: string }) {
   const { resolvedTheme } = useTheme()
 
   return (
-    <Link to="/assets/forgex-logo" className={className}>
+    <Link to="/" className={className}>
       <img
         src={resolvedTheme === "dark" ? logoDark : logoLight}
         alt="ForgEx Limited Company"
-        className="h-8 w-auto"
+        className="h-11 w-auto"
       />
     </Link>
   )

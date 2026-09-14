@@ -8,6 +8,7 @@ import Products from "@/pages/Products"
 import Docta from "@/pages/products/Docta"
 import UniGuide from "@/pages/products/UniGuide"
 import Careers from "@/pages/Careers"
+import Terms from "@/pages/Terms"
 import Privacy from "@/pages/Privacy"
 import Contact from "@/pages/Contact"
 import NotFound from "@/pages/NotFound"
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/products/docta" element={<Docta />} />
             <Route path="/products/uniguide" element={<UniGuide />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
