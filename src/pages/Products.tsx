@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { IconGraduationCap } from "@/components/icons"
 import doctaLogo from "@/assets/docta/docta-logo.png"
+import UniDasboard from "@/assets/docta/uni.png"
 
 const products = [
   {
@@ -20,6 +21,7 @@ const products = [
     to: "/products/uniguide",
     tags: ["Edtech", "Admissions", "Ghana"],
     icon: <IconGraduationCap className="h-8 w-8" />,
+    logo: UniDasboard,
   },
 ]
 
