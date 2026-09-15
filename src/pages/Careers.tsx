@@ -2,9 +2,9 @@ import { buttonVariants } from "@/components/ui/button"
 
 const values = [
   { title: "Innovation", description: "We embrace new ideas and push the boundaries of what technology can do for the people we serve." },
-  { title: "Integrity", description: "We operate with honesty, transparency, and accountability in everything we do." },
+  { title: "Integrity", description: "We operate with honesty, transparency and accountability in everything we do." },
   { title: "Collaboration", description: "The best outcomes come from working together, with each other and with the people who use what we build." },
-  { title: "Excellence", description: "We hold ourselves to a high standard in every line of code, every design, and every interaction." },
+  { title: "Excellence", description: "We hold ourselves to a high standard in every line of code, every design and every interaction." },
 ]
 
 const perks = [
@@ -15,8 +15,8 @@ const perks = [
 ]
 
 const roles = [
-  { title: "Frontend Developer", type: "Full-time - Remote-friendly", description: "Help build and maintain the interfaces for our client projects and our own products using React and TypeScript." },
-  { title: "Backend Developer", type: "Contract - Remote-friendly", description: "Design and build APIs and services powering our platforms, with a focus on reliability and clean data models." },
+  { title: "Frontend Developer", type: "Full-time - Remote-friendly", description: "Help build and maintain the interfaces for our client projects and our own products using modern frontend technologies. Our primary stack includes React, TypeScript, Vite, Tailwind CSS and related modern web technologies, but we value strong frontend fundamentals and are open to developers experienced with other frameworks and stacks." },
+  { title: "Backend Developer", type: "Contract - Remote-friendly", description: "Design, build, and maintain the APIs and backend services that power our platforms and client solutions, with a focus on reliability, security, scalability and clean data architecture. We value strong backend fundamentals and are open to developers experienced with other languages, frameworks, databases and backend stacks." },
 ]
 
 export default function Careers() {
@@ -64,7 +64,7 @@ export default function Careers() {
                 <p className="mt-1 text-xs text-muted-foreground">{r.type}</p>
                 <p className="mt-2 max-w-xl text-sm text-muted-foreground">{r.description}</p>
               </div>
-              <a href="mailto:hello@forgex.com?subject=Application" className={buttonVariants({ variant: "outline" })}>
+              <a href="mailto:apiigasimon0803@gmail.com?subject=Application" className={buttonVariants({ variant: "outline" })}>
                 Apply
               </a>
             </div>
@@ -72,7 +72,7 @@ export default function Careers() {
         </div>
 
         <p className="mt-8 text-sm text-muted-foreground">
-          Do not see a fit but think you would add value anyway? Reach out at hello@forgex.com
+          Do not see a fit but think you would add value anyway? Reach out directly at apiigasimon0803@gmail.com
         </p>
       </section>
     </div>

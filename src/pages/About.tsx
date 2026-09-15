@@ -1,16 +1,18 @@
 import founderPhoto from "@/assets/team/founder.jpg"
 import { TeamCard } from "@/components/TeamCard"
-import { IconTarget, IconHeart, IconUsers, IconSparkles } from "@/components/icons"
+import meet from "@/assets/meet.png"
+//import ken from "@/assets/team/ken.jpg"
+import { IconTarget, IconShield, IconUsers, IconBriefcase } from "@/components/icons"
 
 const values = [
   {
-    icon: <IconSparkles />,
+    icon: <IconBriefcase />,
     title: "Innovation",
     description:
       "We push the boundaries of what technology can do for the businesses and institutions we serve, staying curious about new tools and approaches.",
   },
   {
-    icon: <IconHeart />,
+    icon: <IconShield />,
     title: "Integrity",
     description:
       "We operate with honesty, transparency, and accountability in every engagement, from the first conversation to the final handover.",
@@ -32,19 +34,19 @@ const values = [
 const team = [
   {
     name: "Apiiga Simon Awinbe",
-    role: "Founder, CEO & First Director",
+    role: "Founder & CEO" ,
     photo: founderPhoto,
   },
-  {
+  /* {
     name: "Samuel Yaw Apiiga",
-    role: "Second Director",
+    role: "Director",
     photo: "https://randomuser.me/api/portraits/men/45.jpg",
   },
-  {
+ {
     name: "Ayamga Kenneth Abagna",
     role: "Secretary",
-    photo: "https://randomuser.me/api/portraits/men/62.jpg",
-  },
+    photo: ken,
+  },*/
 ]
 
 export default function About() {
@@ -57,11 +59,11 @@ export default function About() {
             Software built by people who understand the problem.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            ForgEx Limited Company is a Ghana-based software development
-            company. We design, build, and operate digital products for
-            businesses, institutions, and everyday people — and we hold
-            ourselves to the same standard on our own platforms, Docta and
-            UniGuide, that we bring to every client engagement.
+            ForgEx Company Limited is a Ghana-based tech company focused on building practical, reliable
+            and user-centered digital solutions. We design, develop and operate products for businesses, institutions
+            and individuals that solve real problems through thoughtful technology.
+            Our commitment to quality applies to everything we build, including our own platforms that we manage personally, Docta and UniGuide and every other product we deliver for our clients.
+            We approach each engagement with the same standard of care, innovation and accountability.
           </p>
         </div>
       </section>
@@ -73,38 +75,34 @@ export default function About() {
               Our story
             </p>
             <h2 className="text-3xl font-bold text-foreground">
-              From a single idea to a growing software company.
+              From a simple idea to a growing software company.
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               <p>
-                ForgEx began with a simple observation: too many businesses
-                and institutions in Ghana are still running on paper,
-                spreadsheets, and processes that don't scale. We started by
-                solving problems we cared about directly — building Docta,
-                a confidential platform connecting people with counsellors
-                and therapists, and UniGuide, a platform that simplifies how
-                students buy university forms and check WASSCE results.
+                ForgEx began with a simple observation. Many businesses and institutions in Ghana still rely on paper-based processes, spreadsheets
+                and systems that make it difficult to scale. We saw an opportunity to use technology to make these processes simpler, more efficient, and more accessible.
+                We started by solving problems we understood firsthand. We built Docta, a confidential digital platform connecting people with counsellors and therapists
+                and UniGuide, a platform designed to simplify university form purchases, WASSCE result checking and the journey toward making informed university choices.
+                Building and operating our own products has shaped the way we approach every client engagement. We don't simply take a brief and deliver code. We take the time 
+                to understand the people, processes and environments behind each problem then build solutions that are practical, intuitive and designed for real-world adoption.
+                Today, ForgEx is growing into a full-service software development company, delivering custom platforms, AI-powered solutions, IoT solutions, connected hardware, automation technologies and digital transformation projects for individuals,businesses, 
+                schools, healthcare providers and public institutions across Ghana. Our ambition is to continue growing beyond Ghana and contribute to a stronger digital ecosystem across West Africa.
               </p>
               <p>
-                That hands-on product experience shapes how we work with
-                every client. We don't just take a brief and hand back code
-                — we think about the people who will actually use what we
-                build, the realities of the environment they operate in, and
-                what it takes for software to actually get adopted, not just
-                delivered.
+                That hands-on experience shapes how we approach every project. We don't simply take a brief and deliver a finished product, we take the time to understand the people, 
+                environments and challenges behind the problem.
+                Whether we're building software, connected hardware, IoT systems, or intelligent technology, we focus on how the solution will work in the real world. From the first idea to deployment and beyond, 
+                we think about usability, reliability, scalability and adoption because successful technology isn't just about being built; it's about being useful, trusted
+                and built to last.
               </p>
               <p>
-                Today, ForgEx is growing into a full software development
-                company: building custom platforms, AI-powered tools, and
-                digital transformation projects for businesses, schools,
-                healthcare providers, and public institutions across Ghana
-                and, over time, the wider West African region.
+                Today, ForgEx is growing into a technology company building software, AI-powered solutions, IoT systems and smart technologies for businesses and institutions across Ghana and beyond.
               </p>
             </div>
           </div>
           <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-            alt="Team collaborating on a software project"
+            src={meet}
+            alt="Team"
             className="aspect-4/3 w-full rounded-2xl border border-border object-cover"
           />
         </div>

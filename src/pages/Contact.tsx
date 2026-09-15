@@ -9,8 +9,8 @@ export default function Contact() {
           Let's build something together.
         </h1>
         <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-          Tell us about your project, or ask us about Docta or UniGuide. We
-          typically respond within one business day.
+          Have an idea, a challenge to solve, or a project in mind? Let’s talk. Whether you’re looking to build software, hardware, IoT solutions, or explore our products, we’d love to hear from you.
+          Tell us what you’re working on and let’s explore how ForgEx can help. We typically respond within one business day.
         </p>
       </section>
 
@@ -44,8 +44,15 @@ export default function Contact() {
             </label>
             <select className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground outline-none focus:border-primary">
               <option>Custom software development</option>
+              <option>Web & mobile applications</option>
+              <option>AI & automation</option>
+              <option>IoT & smart technology</option>
+              <option>Hardware & embedded systems</option>
+              <option>Digital transformation</option>
+              <option>UI/UX & product design</option>
               <option>Docta</option>
               <option>UniGuide</option>
+              <option>Partnership & collaboration</option>
               <option>Something else</option>
             </select>
           </div>
@@ -62,14 +69,16 @@ export default function Contact() {
           </div>
           <button
             type="submit"
+            onClick={() => {
+              window.location.href =
+                "mailto:apiigasimon0803@gmail.com?subject=Message from ForgEx Contact Form";
+            }}
             className="inline-flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Send message
           </button>
           <p className="text-xs text-muted-foreground">
-            This form is a UI placeholder — connect it to your backend or an
-            email service (e.g. Resend, Formspree) to start receiving
-            submissions.
+            We respond as soon as possible, usually within one business day.
           </p>
         </form>
 
@@ -77,7 +86,7 @@ export default function Contact() {
           <div className="rounded-2xl border border-border bg-card p-6">
             <h3 className="font-semibold text-foreground">Email</h3>
             <p className="mt-1 text-sm text-muted-foreground">
-              hello@forgex.com
+              apiigasimon0803@gmail.com
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-card p-6">
@@ -85,7 +94,7 @@ export default function Contact() {
               Phone / WhatsApp
             </h3>
             <p className="mt-1 text-sm text-muted-foreground">
-              +233 00 000 0000
+              +233 20 651 5160
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-card p-6">
