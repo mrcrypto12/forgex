@@ -10,8 +10,8 @@ export function Logo({ className }: { className?: string }) {
     <Link to="/" className={className}>
       <img
         src={resolvedTheme === "dark" ? logoDark : logoLight}
-        alt="ForgEx Limited Company"
-        className="h-11 w-auto"
+        alt="ForgEx"
+        className="h-9 w-auto"
       />
     </Link>
   )

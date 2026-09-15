@@ -416,7 +416,7 @@ export default function Privacy() {
               If you have questions about this Privacy Policy, want to
               exercise a privacy right, have a concern about our handling of
               personal data, or require further information about our privacy
-              practices, please contact ForgEx using the details below.
+              practices, please contact us below.
             </p>
 
             <div className="mt-6 max-w-xl rounded-xl border border-border bg-card p-6 text-sm">
@@ -442,7 +442,7 @@ export default function Privacy() {
 
             <p className="mt-6 max-w-3xl text-xs leading-6 text-muted-foreground">
               Privacy requests may require reasonable identity verification
-              before we disclose, correct, delete, or otherwise act on
+              before we disclose, correct, delete or otherwise act on
               personal data. We will handle valid requests in accordance with
               applicable Ghanaian data protection requirements.
             </p>

@@ -238,9 +238,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-3xl font-bold text-foreground">
-              Strategy, design, and software built to move your business
-              forward.
-            </h2>
+              We design and build intelligent technologies for day to day businesses operations.            </h2>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
