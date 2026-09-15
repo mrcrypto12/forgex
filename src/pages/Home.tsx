@@ -272,7 +272,7 @@ export default function Home() {
           </p>
 
           <h2 className="max-w-xl text-3xl font-bold text-foreground">
-            Platforms we've built, end to end.
+            Platforms we've built end to end.
           </h2>
 
           <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
