@@ -43,7 +43,7 @@ export default function NotFound() {
               size: "lg",
             })}
           >
-            Back home
+            Go back
           </Link>
         </div>
       </div>

@@ -76,7 +76,7 @@ const featuredProducts: FeaturedProduct[] = [
   {
     name: "HotelMs",
     tagline: "Hotel Managment System.",
-    link: "/products/uniguide",
+    link: "/src/pages/NotFound.tsx",
     screens: [
       {
         url: hotelDashboard,
@@ -90,7 +90,7 @@ const featuredProducts: FeaturedProduct[] = [
   {
     name: "BoutiqueMs",
     tagline: "Boutique Managment System.",
-    link: "/products/uniguide",
+    link: "/src/pages/NotFound.tsx",
     screens: [
       {
         url: boutiqueDashboard,
@@ -105,7 +105,7 @@ const featuredProducts: FeaturedProduct[] = [
   {
     name: "PulseChat",
     tagline: "Messaging Webapp",
-    link: "/products/uniguide",
+    link: "/src/pages/NotFound.tsx",
     screens: [
       {
         url: pulsechatDashboard,
@@ -120,7 +120,7 @@ const featuredProducts: FeaturedProduct[] = [
   {
     name: "PharmMs",
     tagline: "Pharmacy Management System.",
-    link: "/products/uniguide",
+    link: "/src/pages/NotFound.tsx",
     screens: [
       {
         url: pmsDashboard,
