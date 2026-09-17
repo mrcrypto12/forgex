@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { NavLink, useLocation } from "react-router-dom"
 import { Logo } from "./Logo"
 import { NavDropdown, type NavDropdownItem } from "./NavDropdown"
@@ -129,6 +129,30 @@ export function Navbar() {
   const [mobileProducts, setMobileProducts] = useState(false)
   const [mobileCompany, setMobileCompany] = useState(false)
 
+  // Lock background scroll while the mobile menu is open, so only the
+  // menu panel itself scrolls (no confusing double-scroll behind it).
+  useEffect(() => {
+    if (mobileOpen) {
+      const previousOverflow = document.body.style.overflow
+      document.body.style.overflow = "hidden"
+      return () => {
+        document.body.style.overflow = previousOverflow
+      }
+    }
+  }, [mobileOpen])
+
+  // Close the mobile menu automatically if the viewport grows past the
+  // mobile breakpoint (e.g. rotating a tablet, resizing a window).
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setMobileOpen(false)
+      }
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-8">
@@ -190,7 +214,10 @@ export function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-border bg-background px-4 py-4 lg:hidden">
+        <div
+          className="fixed inset-x-0 top-20 z-40 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain border-t border-border bg-background px-4 py-4 lg:hidden"
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
           <nav className="flex flex-col gap-1">
             <NavLink
               to="/"
