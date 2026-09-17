@@ -34,7 +34,7 @@ const values = [
 const team = [
   {
     name: "Apiiga Simon Awinbe",
-    role: "Founder & CEO" ,
+    role: "Developer" ,
     photo: founderPhoto,
   },
   /* {
@@ -102,7 +102,7 @@ export default function About() {
           </div>
           <img
             src={meet}
-            alt="Team"
+            alt=""
             className="aspect-4/3 w-full rounded-2xl border border-border object-cover"
           />
         </div>
@@ -141,7 +141,7 @@ export default function About() {
             Leadership
           </p>
           <h2 className="mt-3 max-w-2xl text-3xl font-bold text-foreground">
-            The people behind ForgEx.
+            Team.
           </h2>
           <p className="mt-3 max-w-xl text-muted-foreground">
             A small, focused leadership team steering ForgEx's products and

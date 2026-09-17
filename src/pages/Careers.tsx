@@ -15,8 +15,8 @@ const perks = [
 ]
 
 const roles = [
-  { title: "Frontend Developer", type: "Full-time - Remote-friendly", description: "Help build and maintain the interfaces for our client projects and our own products using modern frontend technologies. Our primary stack includes React, TypeScript, Vite, Tailwind CSS and related modern web technologies, but we value strong frontend fundamentals and are open to developers experienced with other frameworks and stacks." },
-  { title: "Backend Developer", type: "Contract - Remote-friendly", description: "Design, build, and maintain the APIs and backend services that power our platforms and client solutions, with a focus on reliability, security, scalability and clean data architecture. We value strong backend fundamentals and are open to developers experienced with other languages, frameworks, databases and backend stacks." },
+  { title: "Frontend Developer", type: "Contract - Remote-friendly", description: "Help build and maintain the interfaces for our client projects and our own products using modern frontend technologies. Our primary stack includes React, TypeScript, Vite, Tailwind CSS and related modern web technologies, but we value strong frontend fundamentals and are open to developers experienced with other frameworks and stacks." },
+  { title: "Backend Developer", type: "Full-time - Remote-friendly", description: "Design, build, and maintain the APIs and backend services that power our platforms and client solutions, with a focus on reliability, security, scalability and clean data architecture. We value strong backend fundamentals and are open to developers experienced with other languages, frameworks, databases and backend stacks." },
 ]
 
 export default function Careers() {

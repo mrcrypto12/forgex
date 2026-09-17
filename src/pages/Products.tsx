@@ -19,7 +19,7 @@ const products = [
     description:
       "Lets students buy university admission forms and WASSCE results checkers online, removing queues and guesswork from admissions.",
     to: "/products/uniguide",
-    tags: ["Edtech", "Admissions", "Ghana"],
+    tags: ["Education technology", "Admissions", "Ghana"],
     icon: <IconGraduationCap className="h-8 w-8" />,
     logo: UniDasboard,
   },

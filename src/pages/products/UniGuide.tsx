@@ -72,7 +72,7 @@ export default function UniGuide() {
         <div className="mx-auto max-w-6xl">
           <img
             src={uniguide}
-            alt="UniGuide interface"
+            alt=""
             className="aspect-16/7 w-full rounded-2xl border border-border object-cover"
           />
         </div>

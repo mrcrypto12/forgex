@@ -3,7 +3,7 @@ import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { BrowserFrame } from "@/components/layout/BrowserFrame"
 import {
-  IconHeart,
+  IconBriefcase,
   IconRocket,
   DigitalTransformationIcon,
 } from "@/components/icons"
@@ -25,7 +25,7 @@ const stats = [
 
 const capabilities = [
   {
-    icon: <IconHeart />,
+    icon: <IconBriefcase />,
     title: "AI-Powered Solutions",
     description:
       "We build intelligent software that turns data into insight, automates complex tasks and helps organizations make faster, smarter decisions.",

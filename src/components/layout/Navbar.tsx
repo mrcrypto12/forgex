@@ -29,7 +29,7 @@ const productItems: NavDropdownItem[] = [
     icon: (
       <img
         src={doctaLogo}
-        alt="Docta"
+        alt=""
         className="h-full w-full rounded-lg object-cover"
       />
     ),
@@ -41,7 +41,7 @@ const productItems: NavDropdownItem[] = [
     icon: (
       <img
         src={UniLogo}
-        alt="UNIGUIDE"
+        alt=""
         className="h-full w-full rounded-lg object-cover"
       />
     ),
@@ -53,7 +53,7 @@ const productItems: NavDropdownItem[] = [
     icon: (
       <img
         src={hoteLogo}
-        alt="HOTELMS"
+        alt=""
         className="h-full w-full rounded-lg object-cover"
       />
     ),
@@ -65,7 +65,7 @@ const productItems: NavDropdownItem[] = [
     icon: (
       <img
         src={boutLogo}
-        alt="BOUTIQUEMS"
+        alt=""
         className="h-full w-full rounded-lg object-cover"
       />
     ),
@@ -77,7 +77,7 @@ const productItems: NavDropdownItem[] = [
     icon: (
       <img
         src={pulseLogo}
-        alt="PULSECHAT"
+        alt=""
         className="h-full w-full rounded-lg object-cover"
       />
     ),
@@ -89,7 +89,7 @@ const productItems: NavDropdownItem[] = [
     icon: (
       <img
         src={backLogo}
-        alt="All Products"
+        alt=""
         className="h-full w-full rounded-lg object-cover"
       />
     ),

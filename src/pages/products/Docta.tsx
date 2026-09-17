@@ -59,7 +59,7 @@ export default function Docta() {
             <div className="mb-4 flex items-center gap-3">
               <img
                 src={doctaLogo}
-                alt="Docta logo"
+                alt=""
                 className="h-12 w-12 rounded-xl border border-border object-cover"
               />
               <p className="text-sm font-medium text-primary">
